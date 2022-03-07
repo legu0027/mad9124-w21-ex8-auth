@@ -2,7 +2,7 @@ import http from 'http'
 import app from './app.js'
 import createDebug from 'debug'
 
-const debug = createDebug('week8:httpServer')
+const debug = createDebug('week9:httpServer')
 
 const httpServer = http.createServer(app)
 
