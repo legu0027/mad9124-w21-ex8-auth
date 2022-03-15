@@ -1,12 +1,12 @@
 {
-  "name": "week8",
+  "name": "mad9124-w22-ex8-auth",
   "version": "0.1.0",
   "description": "MAD9124 JWT Auth demo",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "DEBUG=week9* nodemon server.js"
+    "start": "DEBUG=mad9124-w22-ex8-auth* nodemon server.js"
   },
   "keywords": [
     "express",
@@ -14,8 +14,8 @@
     "jwt"
   ],
   "author": {
-    "name": "Robert L. McKenney",
-    "email": "mckennr@algonquincollege.com"
+    "name": "Fernando Leguia",
+    "email": "legu0027@algonquinlive.com"
   },
   "license": "ISC",
   "dependencies": {
