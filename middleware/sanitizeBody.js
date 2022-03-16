@@ -1,7 +1,8 @@
 import createDebug from 'debug'
 import xss from 'xss'
 
-const debug = createDebug('week9:middleWare:sanitizeBody')
+const debug = createDebug('mad9124-w22-ex8-auth:middleWare:sanitizeBody')
+
 
 const sanitize = (sourceString) => {
   return xss(sourceString, {
@@ -34,7 +35,9 @@ const stripTags = (payload) => {
 }
 
 export default function sanitizeBodyMiddleware(req, res, next) {
-  const { id, _id, ...attributes } = req.body?.data?.attributes
+  const { id, _id, ...attributes } = req.body//.data?.attributes
+
+  debug(id, _id, attributes)
   req.sanitizedBody = stripTags(attributes)
 
   next()
